@@ -32,7 +32,7 @@ const LegalPage = () => {
   return (
     <div className="container p-4">
       {/* Language Selector */}
-      <LanguageSelector onChange={setLanguage} />
+      <LanguageSelector onChange={setLanguage} currentLanguage={language} />
 
       {/* Step 1: Introduction */}
       {step === 1 && (
@@ -42,7 +42,7 @@ const LegalPage = () => {
           <p className="mt-4">{translations.description}</p>
           <h3 className="text-xl mt-6">{translations.howItWorks}</h3>
           <ol className="list-decimal pl-5 mt-2">
-            {translations.steps?.map((step, index) => (
+            {translations.steps?.map((step: string, index: number) => (
               <li key={index}>{step}</li>
             ))}
           </ol>
