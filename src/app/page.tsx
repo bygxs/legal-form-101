@@ -2,13 +2,8 @@
 import { useState } from "react";
 import useTranslation from "@/utils/useTranslation";
 import LanguageSelector from "@/components/LanguageSelector";
-import Disclaimer from "@/components/Disclaimer";
 
 const LegalPage = () => {
-  const [language, setLanguage] = useState("en");
-  const translations = useTranslation(language);
-
-  // State for form data
   const [step, setStep] = useState(1); // Track form steps
   const [formData, setFormData] = useState({
     fullName: "",
@@ -17,6 +12,8 @@ const LegalPage = () => {
     zipCode: "",
     description: "",
   });
+  const [language, setLanguage] = useState("en"); // Track selected language
+  const translations = useTranslation(language);
 
   // Handle form changes
   const handleChange = (
@@ -35,36 +32,7 @@ const LegalPage = () => {
   return (
     <div className="container p-4">
       {/* Language Selector */}
-      <div className="flex justify-end mb-4">
-        {/* English Button */}
-        <button
-          onClick={() => setLanguage("en")}
-          className={`px-4 py-2 rounded ${language === "en" ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}
-        >
-          🇺🇸 EN
-        </button>
-        {/* Spanish Button */}
-        <button
-          onClick={() => setLanguage("es")}
-          className={`ml-2 px-4 py-2 rounded ${language === "es" ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}
-        >
-          🇪🇸 ES
-        </button>
-        {/* Ethiopian (Amharic) Button */}
-        <button
-          onClick={() => setLanguage("am")}
-          className={`ml-2 px-4 py-2 rounded ${language === "am" ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}
-        >
-          🇪🇹 AM
-        </button>
-        {/* Eritrean (Tigrinya) Button */}
-        <button
-          onClick={() => setLanguage("ti")}
-          className={`ml-2 px-4 py-2 rounded ${language === "ti" ? "bg-blue-500 text-white" : "bg-gray-200 text-black"}`}
-        >
-          🇪🇷 TI
-        </button>
-      </div>
+      <LanguageSelector onChange={setLanguage} />
 
       {/* Step 1: Introduction */}
       {step === 1 && (
@@ -84,7 +52,12 @@ const LegalPage = () => {
           >
             {translations.startButton}
           </button>
-          <Disclaimer language={language} />
+
+          {/* Disclaimer */}
+          <div className="mt-6 text-sm text-gray-500 dark:text-gray-300">
+            <p className="mb-4">{translations.disclaimer?.[0]}</p>
+            <p>{translations.disclaimer?.[1]}</p>
+          </div>
         </div>
       )}
 
@@ -180,7 +153,12 @@ const LegalPage = () => {
           >
             {translations.submitButton}
           </button>
-          <Disclaimer language={language} />
+
+          {/* Disclaimer */}
+          <div className="mt-6 text-sm text-gray-500 dark:text-gray-300">
+            <p className="mb-4">{translations.disclaimer?.[0]}</p>
+            <p>{translations.disclaimer?.[1]}</p>
+          </div>
         </form>
       )}
 
@@ -190,7 +168,12 @@ const LegalPage = () => {
           <h3 className="text-2xl">{translations.confirmationTitle}</h3>
           <p className="mt-4">{translations.confirmationMessage}</p>
           <p className="mt-4">{translations.termsMessage}</p>
-          <Disclaimer language={language} />
+
+          {/* Disclaimer */}
+          <div className="mt-6 text-sm text-gray-500 dark:text-gray-300">
+            <p className="mb-4">{translations.disclaimer?.[0]}</p>
+            <p>{translations.disclaimer?.[1]}</p>
+          </div>
         </div>
       )}
     </div>
