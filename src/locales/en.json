@@ -1,0 +1,27 @@
+{
+  "title": "Legal Issues Explained",
+  "subtitle": "Find the Right Attorney for Free",
+  "description": "Get matched with qualified attorneys for a consultation in just 60 seconds. Risk-free consultations — no obligation to hire licensed, local attorneys from our network.",
+  "howItWorks": "How It Works",
+  "steps": [
+    "Describe your legal issue",
+    "Get matched with local attorneys",
+    "Have your case evaluated"
+  ],
+  "startButton": "Start",
+  "formTitle": "Start Here to Find the Right Attorney for Free",
+  "formSubtitle": "Takes only a minute | No obligation to hire",
+  "fullNameLabel": "What is your full name? *",
+  "phoneLabel": "What is your phone number? *",
+  "emailLabel": "What is your email address? *",
+  "zipCodeLabel": "What is your zip code? *",
+  "descriptionLabel": "To better match you with an attorney, please briefly describe your case. *",
+  "submitButton": "Get My Consultation",
+  "confirmationTitle": "Thank you for your submission!",
+  "confirmationMessage": "Lawyers typically respond in 1-2 hours.",
+  "termsMessage": "By submitting this form, you agree to the Terms of Use and Privacy Policy...",
+  "disclaimer": [
+    "By submitting this form I agree to the Terms of Use and Privacy Policy and consent to be contacted by LawyerApp, and up to three attorneys regarding this request and to receiving relevant marketing messages by automated means, text and/or prerecorded messages at the number provided. Consent is not required as a condition of service, click here to agree without providing consent to be contacted by automated means, text and/or prerecorded messages. Rates may apply.",
+    "You should not send any sensitive or confidential information through this site. Any information sent through this site does not create an attorney-client relationship and may not be treated as privileged or confidential. Information you provide on this site is subject to our privacy policy. The lawyer or law firm you are contacting is not required to, and may choose not to, accept you as a client. The Internet is not necessarily secure and emails sent through this site could be intercepted or read by third parties."
+  ]
+}

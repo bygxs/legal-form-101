@@ -1,0 +1,28 @@
+{
+    "title": "Problemas Legales Explicados",
+    "subtitle": "Encuentra el Abogado Correcto de Forma Gratuita",
+    "description": "Obtén una cita con abogados cualificados en solo 60 segundos...",
+    "howItWorks": "Cómo Funciona",
+    "steps": [
+      "Describe tu problema legal",
+      "Recibe coincidencias con abogados locales",
+      "Evalúa tu caso"
+    ],
+    "startButton": "Comenzar",
+    "formTitle": "Empieza Aquí para Encontrar el Abogado Correcto de Forma Gratuita",
+    "formSubtitle": "Solo tarda un minuto | Sin compromiso de contratación",
+    "fullNameLabel": "¿Cuál es tu nombre completo? *",
+    "phoneLabel": "¿Cuál es tu número de teléfono? *",
+    "emailLabel": "¿Cuál es tu dirección de correo electrónico? *",
+    "zipCodeLabel": "¿Cuál es tu código postal? *",
+    "descriptionLabel": "Para emparejarte mejor con un abogado, por favor describe brevemente tu caso. *",
+    "submitButton": "Obtener Mi Consulta",
+    "confirmationTitle": "¡Gracias por tu solicitud!",
+    "confirmationMessage": "Los abogados suelen responder en 1-2 horas.",
+    "termsMessage":
+"Al enviar este formulario, aceptas los Términos de Uso y la Política de Privacidad y consientes que puedes recibir mensajes de texto y llamadas automáticas o grabadas en el número proporcionado. El consentimiento para recibir estos mensajes no es una condición para realizar esta solicitud. Pueden aplicarse tarifas por mensaje y datos según tu plan de telefonía.",
+    "disclaimer": [
+        "Al enviar este formulario, acepto los Términos de Uso y la Política de Privacidad y consiento ser contactado por LawyerApp y hasta tres abogados sobre esta solicitud y recibir mensajes de marketing relevantes mediante medios automatizados, texto y/o mensajes pregrabados al número proporcionado. El consentimiento no es necesario como condición del servicio, haz clic aquí para aceptar sin proporcionar consentimiento para ser contactado mediante medios automatizados, texto y/o mensajes pregrabados. Pueden aplicarse tarifas.",
+        "No debes enviar ninguna información sensible o confidencial a través de este sitio. Cualquier información enviada a través de este sitio no crea una relación abogado-cliente y puede no ser tratada como privilegiada o confidencial. La información que proporcionas en este sitio está sujeta a nuestra política de privacidad. El abogado o bufete de abogados con el que te estás comunicando no está obligado a, y puede elegir no, aceptarte como cliente. Internet no es necesariamente seguro y los correos electrónicos enviados a través de este sitio pueden ser interceptados o leídos por terceros."
+      ]
+  }
